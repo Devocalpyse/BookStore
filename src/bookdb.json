@@ -3,18 +3,18 @@
     {
       "id": 1,
       "title": "Wraith in the Shell",
-      "description": "Mankind serves a new apex predator: the off-world invaders called Wraiths. Even with the invention of Shells, a highly versatile machine of war, they lost. Many years later, a man who pilots one of these Shells ends up becoming in an accident",
-      "price": 15,
+      "description": "Mankind serves a new apex predator: the off-world invaders called Wraiths. Even with the invention of Shells, a highly versatile machine of war, they lost. Many years later, a man who pilots one of these Shells ends up becoming in an accident.",
+      "price": 25,
       "img_url": "url",
-      "genre": "string"
+      "genre": "science-fiction"
     },
     {
-      "id": 1,
-      "title": "title",
-      "description": "description",
-      "price": 1,
+      "id": 2,
+      "title": "Slipstream",
+      "description": "All he desired was speed, the speed to win. 'Black Crow' his moniker, the desire was insatiable. When the underground racing scene suddenly chooses him to participate in its greatest event, he discovers it will take much more than speed to win this time around. Namely, a team.",
+      "price": 15,
       "img_url": "url",
-      "genre": "string"
+      "genre": "science-fiction"
     },
     {
       "id": 1,
