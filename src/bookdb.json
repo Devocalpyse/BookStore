@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Wraith in the Shell",
+      "description": "Mankind serves a new apex predator: the off-world invaders called Wraiths. Even with the invention of Shells, a highly versatile machine of war, they lost. Many years later, a man who pilots one of these Shells ends up becoming in an accident",
+      "price": 15,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    },
+    {
+      "id": 1,
+      "title": "title",
+      "description": "description",
+      "price": 1,
+      "img_url": "url",
+      "genre": "string"
+    }
+  ]
+}
