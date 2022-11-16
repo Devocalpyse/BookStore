@@ -65,20 +65,20 @@
       "genre": "thriller"
     },
     {
-      "id": 1,
-      "title": "title",
-      "description": "description",
-      "price": 1,
+      "id": 9,
+      "title": "Jäger",
+      "description": "While investigating the case of a doctor who died after reading a strange letter, detectives Arthur Daw and Valentine Descartes must unravel a thread connecting seemingly unconnected people -- the last letter is sent.",
+      "price": 13,
       "img_url": "url",
-      "genre": "string"
+      "genre": "mystery"
     },
     {
-      "id": 1,
-      "title": "title",
-      "description": "description",
-      "price": 1,
+      "id": 10,
+      "title": "Prismyriad",
+      "description": "They called it the Great Fall -- the day a meteor of unknown origin struck the Earth. Contained inside was an alien disease that crystallized organic life as it consumed it. In an effort to find a cure, prominent subjects are captured by the CDC for observation. One of these, a girl deemed by the subject name 'Prismarine', develops the ability to experience the memories of the other subjects",
+      "price": 13,
       "img_url": "url",
-      "genre": "string"
+      "genre": "science-fiction"
     }
   ]
 }
