@@ -50,19 +50,19 @@
     },
     {
       "id": 7,
-      "title": "title",
-      "description": "description",
-      "price": 1,
+      "title": "Horizon Down",
+      "description": "It is empty when the prisoners awake, the few that do. Empty, as there are no wardens in the supposed prison, no guards, and the electronic barriers are off. Some take this as an opportunity to escape, but find evidence that someone -- or something -- sabotaged the station. New Horizon Prison, stationed at Langrange 1, has gone dark.",
+      "price": 15,
       "img_url": "url",
-      "genre": "string"
+      "genre": "horror"
     },
     {
-      "id": 1,
-      "title": "title",
-      "description": "description",
-      "price": 1,
+      "id": 8,
+      "title": "Another Day in Retail",
+      "description": "A retail employee, fed up with his mediocre position, joins the 'bust' team, responsible for tracking down petty store thieves with local authorities. Little did he know that busting an unassuming pawn shop would place him in the crosshairs of a long running crime syndicate -- and they do not take kindly to bad business.",
+      "price": 15,
       "img_url": "url",
-      "genre": "string"
+      "genre": "thriller"
     },
     {
       "id": 1,
