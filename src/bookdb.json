@@ -17,39 +17,39 @@
       "genre": "science-fiction"
     },
     {
-      "id": 1,
-      "title": "title",
-      "description": "description",
-      "price": 1,
+      "id": 3,
+      "title": "March of the Wicked Ones",
+      "description": "The Ashen War still raged, even after a hundred years. Warriors with bodies of ash and hearts of ember roam like witless animals, spreading their black soot over the lands. Why or how, no one exactly knows, only that they wish to conquer the world. The key lies in a young boy's nightmare, a vision of a capital crumbling to dust.",
+      "price": 15,
       "img_url": "url",
-      "genre": "string"
+      "genre": "fantasy"
     },
     {
-      "id": 1,
-      "title": "title",
-      "description": "description",
-      "price": 1,
+      "id": 4,
+      "title": "Garden in the Rough",
+      "description": "Richard was a nobody -- just another blue collar worker. To others, at least. Truly, he was a gardner, at home with the things of green. While alone, he spent his time reviving an old, abandoned atrium from a time before the city boomed. To his surprise, he discovers that the wooden archway in the back is more in touch with the past than it first seems.",
+      "price": 15,
       "img_url": "url",
-      "genre": "string"
+      "genre": "romance"
     },
     {
-      "id": 1,
-      "title": "title",
-      "description": "description",
-      "price": 1,
+      "id": 5,
+      "title": "West of the Rising Sun",
+      "description": "It has been a hundred years since the countries of Europa and the Land of the Rising Sun, or Japan, met each other for the first time. The war for the Middle, the location of their meeting and of immense resources, continues to this day. The seeds of peace are planted the day a traitor to Japan's new regime, the New Sun, is banished to the West, where a chance encounter with its deadliest outlaw takes place.",
+      "price": 20,
       "img_url": "url",
-      "genre": "string"
+      "genre": "fantasy"
     },
     {
-      "id": 1,
-      "title": "title",
-      "description": "description",
+      "id": 6,
+      "title": "Breathe",
+      "description": "Sara Yamaguchi is a high-school student transferring to Iwara East High, and has a knack for noticing things -- body language, bird species, or the local convienience store employee changing shifts, you name it. The only thing unnatural about it is when she notices the classroom recluse vanishing into thin air.",
       "price": 1,
       "img_url": "url",
-      "genre": "string"
+      "genre": "romance"
     },
     {
-      "id": 1,
+      "id": 7,
       "title": "title",
       "description": "description",
       "price": 1,
