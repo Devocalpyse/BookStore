@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BookProvider } from './BookContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BookProvider>
+      <App />
+    </BookProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
