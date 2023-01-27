@@ -13,26 +13,49 @@ export function BookProvider(props) {
     fetchBooks();
   }, []);
 
+  let baseUrl = 'http://localhost:3001/books/';
+
   function refreshBooks() {
-    return axios.get('http://localhost:3001/books').then((response) => {
+    return axios.get(baseUrl).then((response) => {
       setBooks(response);
     });
   }
 
-  function getBook() {}
+  // CRUD Ops
+  // Create a singular book
+  function createBook(book) {
+    return axios.post(baseUrl, book).then((response) => {
+      refreshBooks();
+      return new Promise((resolve) => resolve(response.data));
+    });
+  }
 
-  function addBook() {}
+  // Get a singular book by id
+  function readBook(id) {
+    return axios
+      .get(baseUrl + id)
+      .then((response) => new Promise((resolve) => resolve(response.data)));
+  }
 
-  function updateBook() {}
+  // Update a singular book by id
+  function updateBook(book) {
+    return axios.put(baseUrl + book.id, book).then((response) => {
+      refreshBooks();
+      return new Promise((resolve) => resolve(response.data));
+    });
+  }
 
-  function deleteBook() {}
+  // Delete a singular book by id
+  function deleteBook(id) {
+    axios.delete(baseUrl + id).then(refreshBooks);
+  }
 
   return (
     <BookContext.Provider
       value={{
         books,
-        getBook,
-        addBook,
+        createBook,
+        readBook,
         updateBook,
         deleteBook,
       }}>

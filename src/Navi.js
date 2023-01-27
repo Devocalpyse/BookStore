@@ -1,0 +1,22 @@
+import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import logo from './book.svg'
+
+export default function Navi() {
+  return (
+    <Navbar bg='dark' variant='dark'>
+      <Container>
+        <Navbar.Brand href='/'>
+          <img src={logo} alt="Book store logo" />
+        </Navbar.Brand>
+        <Nav>
+          <Link to='/' className='nav-link'>Home</Link>
+          <Link to='/books' className='nav-link'>Books</Link>
+          <Link to='/books/new' className='nav-link'>New Book</Link>
+          <Link to='/about' className='nav-link'>About the Author</Link>
+        </Nav>
+      </Container>
+    </Navbar>
+  );
+}
