@@ -1,0 +1,9 @@
+.noSides {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.opaque {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+}

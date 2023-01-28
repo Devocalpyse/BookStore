@@ -17,7 +17,7 @@ export function BookProvider(props) {
 
   function refreshBooks() {
     return axios.get(baseUrl).then((response) => {
-      setBooks(response);
+      setBooks(response.data);
     });
   }
 

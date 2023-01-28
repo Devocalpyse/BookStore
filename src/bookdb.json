@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "Wraith in the Shell",
+      "series": "Book One of the Iron Chronicle",
       "description": "Mankind serves a new apex predator: the off-world invaders called Wraiths. Even with the invention of Shells, a highly versatile machine of war, they lost. Many years later, a man who pilots one of these Shells ends up becoming in an accident.",
       "price": 25,
       "image": "./bookCovers/1.jpg",
@@ -44,13 +45,14 @@
       "id": 6,
       "title": "Breathe",
       "description": "Sara Yamaguchi is a high-school student transferring to Iwara East High, and has a knack for noticing things -- body language, bird species, or the local convienience store employee changing shifts, you name it. The only thing unnatural about it is when she notices the classroom recluse vanishing into thin air.",
-      "price": 1,
+      "price": 10,
       "image": "./bookCovers/6.jpg",
       "genre": "romance"
     },
     {
       "id": 7,
       "title": "Horizon Down",
+      "series": "Spin-off novella from the Iron Chronicle",
       "description": "It is empty when the prisoners awake, the few that do. Empty, as there are no wardens in the supposed prison, no guards, and the electronic barriers are off. Some take this as an opportunity to escape, but find evidence that someone -- or something -- sabotaged the station. New Horizon Prison, stationed at Langrange 1, has gone dark.",
       "price": 15,
       "image": "./bookCovers/7.jpg",
