@@ -33,8 +33,8 @@ export function BookProvider(props) {
   // Get a singular book by id
   function readBook(id) {
     return axios
-      .get(baseUrl + id)
-      .then((response) => new Promise((resolve) => resolve(response.data)));
+      .get(`http://localhost:3001/books/${id}`)
+      .then(response => new Promise((resolve) => resolve(response.data)));
   }
 
   // Update a singular book by id

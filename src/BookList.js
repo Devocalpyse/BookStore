@@ -1,26 +1,19 @@
 import { React, useContext } from 'react';
-import {
-  Button,
-  ButtonGroup,
-  Card,
-  Container,
-  ListGroup,
-  ListGroupItem,
-  Stack,
-} from 'react-bootstrap';
+import { Button, ButtonGroup, Card, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BookContext } from './BookContext';
-import { Outlet } from 'react-router-dom';
 import './BookList.css';
 
 export default function BookList() {
+  let { deleteBook, books } = useContext(BookContext);
 
   function seriesCheck(book) {
     if (book.series === null) return;
-    if (book.series)
-      return (
-        <Card.Subtitle>{book.series}</Card.Subtitle>
-      );
+    if (book.series) return <Card.Subtitle>{book.series}</Card.Subtitle>;
+  }
+
+  function handleDelete(id) {
+    deleteBook(id);
   }
 
   function bookList(books) {
@@ -28,7 +21,7 @@ export default function BookList() {
     return books.map((book) => (
       <Card bg='dark' text='light' key={book.id} className='col-3 m-3 noSides text-center'>
         <Card.Img variant='top' src={require(`./bookCovers/${book.id}.jpg`)} />
-        <Container className='p-3'>
+        <Card.Body>
           <Card.Title>
             <h4>{book.title}</h4>
           </Card.Title>
@@ -43,12 +36,12 @@ export default function BookList() {
             Genre: <b>{book.genre}</b>
           </Card.Text>
 
-          <ButtonGroup className='d-flex'>
-            <Button variant='secondary'>View</Button>
-            <Button variant='warning'>Edit</Button>
-            <Button variant='danger'>Delete</Button>
-          </ButtonGroup>
-        </Container>
+            <Button variant='secondary w-100'>
+              <Link to={`/title/${book.id}`} className='nav-link'>
+                View
+              </Link>
+            </Button>
+        </Card.Body>
       </Card>
     ));
   }
@@ -57,7 +50,7 @@ export default function BookList() {
     <>
       <h1 className='text-center'>Books for Sale</h1>
       <div className='row justify-content-center'>
-        <BookContext.Consumer>{({ books }) => bookList(books)}</BookContext.Consumer>
+        {bookList(books)}
       </div>
     </>
   );
