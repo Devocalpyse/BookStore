@@ -5,6 +5,7 @@ export const BookContext = createContext();
 
 export function BookProvider(props) {
   const [books, setBooks] = useState([]);
+  const [genre, setGenre] = useState('');
 
   useEffect(() => {
     async function fetchBooks() {
@@ -14,6 +15,12 @@ export function BookProvider(props) {
   }, []);
 
   let baseUrl = 'http://localhost:3001/books/';
+
+  // function refreshBooks(genre) {
+  //   return axios.get(`http://localhost:3001/books?genre_like=${genre}`).then((response) => {
+  //     setBooks(response.data)
+  //   });
+  // }
 
   function refreshBooks() {
     return axios.get(baseUrl).then((response) => {
@@ -34,7 +41,7 @@ export function BookProvider(props) {
   function readBook(id) {
     return axios
       .get(`http://localhost:3001/books/${id}`)
-      .then(response => new Promise((resolve) => resolve(response.data)));
+      .then((response) => new Promise((resolve) => resolve(response.data)));
   }
 
   // Update a singular book by id
@@ -50,14 +57,37 @@ export function BookProvider(props) {
     axios.delete(baseUrl + id).then(refreshBooks);
   }
 
+  // Filter images
+  function filterImage(id, image) {
+    if (image.startsWith('.')) {
+      return require(`./bookCovers/${id}.jpg`);
+    } else {
+      return image;
+    }
+  }
+
+  // Filter genre
+  function filterBooks(genre) {
+    async function fetch() {
+      return axios.get(`http://localhost:3001/books?genre_like=${genre}`).then((response) => {
+        setBooks(response.data);
+      });
+    }
+    fetch();
+  }
+
   return (
     <BookContext.Provider
       value={{
         books,
+        refreshBooks,
         createBook,
         readBook,
         updateBook,
         deleteBook,
+        filterImage,
+        filterBooks,
+        setGenre,
       }}>
       {props.children}
     </BookContext.Provider>

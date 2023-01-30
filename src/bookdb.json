@@ -4,42 +4,43 @@
       "id": 1,
       "title": "Wraith in the Shell",
       "series": "Book One of the Iron Chronicle",
-      "description": "Mankind serves a new apex predator: the off-world invaders called Wraiths. Even with the invention of Shells, a highly versatile machine of war, they lost. Many years later, a man who pilots one of these Shells ends up becoming in an accident.",
+      "description": "Mankind serves a new apex predator: the off-world invaders called Wraiths. Even with the invention of Shells, a highly versatile machine of war, they lost. Many years later, a man who pilots one of these Shells ends up becoming one in an accident.",
       "price": 25,
       "image": "./bookCovers/1.jpg",
-      "genre": "science-fiction"
+      "genre": "Science-Fiction"
     },
     {
       "id": 2,
       "title": "Slipstream",
-      "description": "All he desired was speed, the speed to win. 'Black Crow' his moniker, the desire was insatiable. When the underground racing scene suddenly chooses him to participate in its greatest event, he discovers it will take much more than speed to win this time around. Namely, a team.",
+      "description": "All he desired was speed -- the speed to win. \"Black Crow\" his moniker, the desire was insatiable. When the underground racing scene suddenly chose him to participate in its greatest event, however, he discovers it will take much more than speed to win this time around. Namely, a team.",
       "price": 15,
       "image": "./bookCovers/2.jpg",
-      "genre": "science-fiction"
+      "genre": "Science-Fiction"
     },
     {
       "id": 3,
       "title": "March of the Wicked Ones",
-      "description": "The Ashen War still raged, even after a hundred years. Warriors with bodies of ash and hearts of ember roam like witless animals, spreading their black soot over the lands. Why or how, no one exactly knows, only that they wish to conquer the world. The key lies in a young boy's nightmare, a vision of a capital crumbling to dust.",
+      "description": "The Ashen War still rages, even after a hundred years. Warriors with bodies of ash and hearts of ember roam like drones, spreading ever-blackening the lands in soot. Why or how, no one exactly knows, only that they wish to conquer the world. The key to the answer lies in a young boy's nightmare: a vision of a capital crumbling to dust.",
       "price": 15,
       "image": "./bookCovers/3.jpg",
-      "genre": "fantasy"
+      "genre": "Fantasy",
+      "series": ""
     },
     {
       "id": 4,
       "title": "Garden in the Rough",
-      "description": "Richard was a nobody -- just another blue collar worker. To others, at least. Truly, he was a gardener, at home with the things of green. While alone, he spent his time reviving an old, abandoned atrium from a time before the city boomed. To his surprise, he discovers that the wooden archway in the back is more in touch with the past than it first seems.",
+      "description": "Richard was a nobody -- just another blue collar worker. To others, at least. In truth, he was a gardener, at home with the things of green. While alone, he spends his time reviving an old, abandoned atrium from a time before the city bloomed to life. To his surprise, he discovers that the wooden archway in the back is more in touch with the past than it first seems.",
       "price": 15,
       "image": "./bookCovers/4.jpg",
-      "genre": "romance"
+      "genre": "Romance"
     },
     {
       "id": 5,
       "title": "West of the Rising Sun",
-      "description": "It has been a hundred years since the countries of Europa and the Land of the Rising Sun, or Japan, met each other for the first time. The war for the Middle, the location of their meeting and of immense resources, continues to this day. The seeds of peace are planted the day a traitor to Japan's new regime, the New Sun, is banished to the West, where a chance encounter with its deadliest outlaw takes place.",
+      "description": "It has been a hundred years since the countries of Europa and the Land of the Rising Sun, or Japan, met each other for the first time. The war for the Middle, the location of their first meeting and a place immense resources, continues to this day. The seeds of to bringing about peace are sown the day a rebel to Japan's militaristic regime, the New Sun, is banished to the West, where a chance encounter with its deadliest outlaw takes place.",
       "price": 20,
       "image": "./bookCovers/5.jpg",
-      "genre": "fantasy"
+      "genre": "Fantasy"
     },
     {
       "id": 6,
@@ -47,16 +48,17 @@
       "description": "Sara Yamaguchi is a high-school student transferring to Iwara East High, and has a knack for noticing things -- body language, bird species, or the local convienience store employee changing shifts, you name it. The only thing unnatural about it is when she notices the classroom recluse vanishing into thin air.",
       "price": 10,
       "image": "./bookCovers/6.jpg",
-      "genre": "romance"
+      "genre": "Romance",
+      "series": ""
     },
     {
       "id": 7,
       "title": "Horizon Down",
       "series": "Spin-off novella from the Iron Chronicle",
-      "description": "It is empty when the prisoners awake, the few that do. Empty, as there are no wardens in the supposed prison, no guards, and the electronic barriers are off. Some take this as an opportunity to escape, but find evidence that someone -- or something -- sabotaged the station. New Horizon Prison, stationed at Langrange 1, has gone dark.",
+      "description": "It is empty when the prisoners awake, the few that do. Empty, as there are no wardens in the prison, no guards, and the electronic barriers are off. Some prisoners take this as an opportunity to escape, but others find evidence that someone -- or something -- sabotaged the station. New Horizon Prison, stationed at Langrange 1 between the Earth and Moon, has gone dark.",
       "price": 15,
       "image": "./bookCovers/7.jpg",
-      "genre": "horror"
+      "genre": "Horror"
     },
     {
       "id": 8,
@@ -64,23 +66,23 @@
       "description": "A retail employee, fed up with his mediocre position, joins the 'bust' team, responsible for tracking down petty store thieves with local authorities. Little did he know that busting an unassuming pawn shop would place him in the crosshairs of a long running crime syndicate -- and they do not take kindly to bad business.",
       "price": 15,
       "image": "./bookCovers/8.jpg",
-      "genre": "thriller"
+      "genre": "Thriller"
     },
     {
       "id": 9,
       "title": "Jäger",
-      "description": "While investigating the case of a doctor who died after reading a strange letter, detectives Arthur Daw and Valentine Descartes must unravel a thread connecting seemingly unconnected people -- before the last letter is sent.",
+      "description": "While investigating the case of a doctor who died after reading a strange letter, strait-laced detective Arthur Daw and his roguish partner Valentine Descartes must unravel a thread connecting seemingly unconnected people -- before the last letter is sent.",
       "price": 13,
       "image": "./bookCovers/9.jpg",
-      "genre": "mystery"
+      "genre": "Mystery"
     },
     {
       "id": 10,
       "title": "Prismyriad",
-      "description": "They called it the Great Fall -- the day a meteor of unknown origin struck the Earth. Contained inside was an alien disease that crystallized organic life as it consumed it. In an effort to find a cure, prominent subjects are captured by the CDC for observation. One of these, a girl deemed by the subject name 'Prismarine', develops the ability to experience the memories of the other subjects",
+      "description": "The Great Impact -- the day a meteor of unknown origin struck the Earth. Contained inside was an alien disease that crystallizes organic life as it consumes it. In an effort to find a cure, prominent subjects are captured by a militarized CDC to observe this \"Crystallization\". One of these, subject name 'Prismarine', develops the ability to experience the memories of those also afflicted by Crystallization.",
       "price": 20,
       "image": "./bookCovers/10.jpg",
-      "genre": "science-fiction"
+      "genre": "Science-Fiction"
     }
   ]
 }

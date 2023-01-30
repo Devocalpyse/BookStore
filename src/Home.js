@@ -1,10 +1,9 @@
-import { React, useContext, useEffect, useState } from 'react';
-import { Button, Card } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import { Button, Card, CardGroup, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BookContext } from './BookContext';
-import GenreFilter from './GenreFilter';
 
-export default function BookList() {
+export default function Home() {
   let { books, filterImage } = useContext(BookContext);
 
   function seriesCheck(book) {
@@ -20,10 +19,11 @@ export default function BookList() {
     }
   }
 
-  function bookList(books) {
+  function genCards() {
     if (books === null) return;
-    return books.map((book) => (
-      <Card bg='dark' text='light' key={book.id} className='col-md-3 m-3 noSides text-center'>
+    let slicedBooks = books.slice(0, 3);
+    return slicedBooks.map((book) => (
+      <Card bg='light' text='dark' key={book.id} className='noSides mx-1'>
         <Card.Img variant='top' src={filterImage(book.id, book.image)} />
         <Card.Body className='d-flex flex-column'>
           <Card.Title className='mb-0'>
@@ -31,13 +31,6 @@ export default function BookList() {
           </Card.Title>
 
           {seriesCheck(book)}
-
-          <Card.Text>
-            <h5>${book.price}</h5>
-          </Card.Text>
-          <Card.Text>
-            Genre: <b>{book.genre}</b>
-          </Card.Text>
 
           <Button className='mt-auto' variant='secondary'>
             <Link to={`/title/${book.id}`} className='nav-link'>
@@ -50,19 +43,24 @@ export default function BookList() {
   }
 
   return (
-    <>
-      <h1 className='text-center'>Books for Sale</h1>
-      <hr />
-      <div className='d-flex justify-content-around'>
-        <Button variant='primary'>
-          <Link to='/new' className='nav-link'>
-            Add a Book of Your Own
-          </Link>
-        </Button>
-        <GenreFilter />
-      </div>
+    <div className='text-center'>
+      <hgroup>
+        <h1>
+          Welcome to <b>Voss Books</b>
+        </h1>
+        <h5>A book store...where you can add your own books!</h5>
+      </hgroup>
 
-      <div className='row justify-content-center'>{bookList(books)}</div>
-    </>
+      <hr />
+
+      <Row className='mb-3'>
+        <Col sm={3} className='d-flex align-items-center'>
+          <h3>Our top-selling novels by author <b>Johann Voss</b></h3>
+        </Col>
+        <Col sm={9}>
+          <CardGroup>{genCards()}</CardGroup>
+        </Col>
+      </Row>
+    </div>
   );
 }

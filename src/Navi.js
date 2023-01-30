@@ -8,12 +8,12 @@ export default function Navi() {
     <Navbar bg='dark' variant='dark'>
       <Container>
         <Navbar.Brand href='/'>
-          <img src={logo} alt="Book store logo" />
+          <img src={logo} alt="Book store logo" />{' '}
+          Voss Books
         </Navbar.Brand>
         <Nav>
           <Link to='/' className='nav-link'>Home</Link>
           <Link to='/books' className='nav-link'>Books</Link>
-          <Link to='/books/new' className='nav-link'>New Book</Link>
           <Link to='/about' className='nav-link'>About the Author</Link>
         </Nav>
       </Container>

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Button, Card, Spinner, Stack } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { Button, ButtonGroup, Card, ListGroup, Spinner } from 'react-bootstrap';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { BookContext } from './BookContext';
 
 export default function SelectedTitle() {
@@ -8,7 +8,8 @@ export default function SelectedTitle() {
   const [error, setError] = useState();
 
   let { titleId } = useParams();
-  let { readBook, deleteBook } = useContext(BookContext);
+  let navigate = useNavigate();
+  let { readBook, deleteBook, filterImage } = useContext(BookContext);
 
   useEffect(() => {
     setError(null);
@@ -26,22 +27,39 @@ export default function SelectedTitle() {
     );
   }
 
+  function handleDelete(id) {
+    deleteBook(id);
+    navigate('/books');
+  }
+
   function titleCard() {
-    let { id, title, series, description, price, image, genre } = book;
+    let { id, description, price, image, genre } = book;
     return (
       <>
-        <Card border='light'>
+        <Card border='light' className='mb-2'>
           <div className='row'>
             <div className='col-4'>
-              <Card.Img src={require(`./bookCovers/${id}.jpg`)} />
+              <Card.Img src={filterImage(id, image)} />
             </div>
             <div className='col-8'>
               <Card.Body className='d-flex flex-column h-100'>
-                <Card.Text>{description}</Card.Text>
+                <Card.Text className='lead'>{description}</Card.Text>
 
-                <Button className='mt-auto col-6' variant='primary'>
-                  Go somewhere
-                </Button>
+                <ListGroup variant='flush'>
+                  <ListGroup.Item>Genre: <b>{genre}</b></ListGroup.Item>
+                  <ListGroup.Item>Price: <b>${price}</b></ListGroup.Item>
+                </ListGroup>
+
+                <ButtonGroup className='mt-auto'>
+                  <Button className='mt-auto' variant='primary'>
+                    <Link className='nav-link' to={`/title/${id}/edit`}>
+                      Edit
+                    </Link>
+                  </Button>
+                  <Button onClick={handleDelete.bind(this, id)} variant='danger'>
+                    Delete
+                  </Button>
+                </ButtonGroup>
               </Card.Body>
             </div>
           </div>
